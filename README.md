@@ -4,6 +4,8 @@ The project consists of:
 - A Flask web application that provides an interactive interface for user input.
 - Data analysis and visualizations created with Python libraries (Pandas, Seaborn, Matplotlib) to uncover insights from the dataset.
 
+This model has a 85% accuracy score.
+
 The original data came from the Cleveland data from the UCI Machine Learning Repository. https://archive.ics.uci.edu/ml/datasets/heart+Disease
 
 Data analysis:
