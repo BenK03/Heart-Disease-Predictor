@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Heart Disease Predictor</title>
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  {% if prediction_text %}
+    <!-- RESULT SCREEN -->
+    <div id="result-screen" class="center-container">
+      <h1>RESULT</h1>
+      <h2>{{ prediction_text }}</h2>
+      <button id="restart-btn" onclick="window.location.href='/'">Restart</button>
+    </div>
+  {% else %}
+    <!-- WELCOME SCREEN -->
+    <div id="welcome" class="center-container">
+      <h1>HEART DISEASE PREDICTOR<img src="https://img.pikbest.com/origin/09/25/73/568pIkbEsTzue.png!sw800" height="200" width="200"></h1>
+      <button id="start-btn">Click to Start</button>
+    </div>
+    
+    <!-- QUESTION CONTAINER (hidden by default) -->
+    <div id="question-container" class="center-container" style="display: none;">
+      <div class="question" id="question-content">
+        <h2 id="question-prompt"></h2>
+        <input type="text" id="answer-input" placeholder="Type your answer here" />
+        <br/>
+        <button id="next-btn">Next</button>
+      </div>
+    </div>
+    
+    <!-- FINAL FORM CONTAINER (hidden by default) -->
+    <div id="final-form-container" class="center-container" style="display: none;">
+      <form id="final-form" action="/predict" method="post">
+        <input type="hidden" name="age" id="form-age">
+        <input type="hidden" name="sex" id="form-sex">
+        <input type="hidden" name="cp" id="form-cp">
+        <input type="hidden" name="trestbps" id="form-trestbps">
+        <input type="hidden" name="chol" id="form-chol">
+        <input type="hidden" name="fbs" id="form-fbs">
+        <input type="hidden" name="restecg" id="form-restecg">
+        <input type="hidden" name="thalach" id="form-thalach">
+        <input type="hidden" name="exang" id="form-exang">
+        <input type="hidden" name="oldpeak" id="form-oldpeak">
+        <input type="hidden" name="slope" id="form-slope">
+        <input type="hidden" name="ca" id="form-ca">
+        <input type="hidden" name="thal" id="form-thal">
+        <button type="submit" id="submit-btn">Predict</button>
+      </form>
+    </div>
+    
+    <!-- Link to the external JavaScript file -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  {% endif %}
+</body>
+</html>
