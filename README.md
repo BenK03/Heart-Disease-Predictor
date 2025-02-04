@@ -1,9 +1,8 @@
 # Heart-Disease-Predictor
 The project consists of:
-- Heart Disease Prediction System is developed using the Artificial Neural Network (ANN) algorithm for predicting the risk level of heart disease. The system uses 13 medical 
-  parameters such as age, sex, blood pressure, cholesterol, and obesity for prediction. The heart disease prediction system predicts the likelihood of patients getting heart disease.
+- Heart Disease Prediction System is developed using the deep learning Artificial Neural Network (ANN) algorithm for predicting the risk level of heart disease. The system uses 13 medical parameters such as age, sex, blood pressure, cholesterol, and obesity for prediction. The heart disease prediction system predicts the likelihood of patients getting heart disease.
 - A Flask web application that provides an interactive interface for user input.
-- Data analysis and visualizations created with Python libraries (Pandas, NumPy, Seaborn, Matplotlib) to uncover insights from the dataset.
+- Data analysis and visualizations created with Python libraries (Pandas, Seaborn, Matplotlib) to uncover insights from the dataset.
 
 The original data came from the Cleveland data from the UCI Machine Learning Repository. https://archive.ics.uci.edu/ml/datasets/heart+Disease
 
