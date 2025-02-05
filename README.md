@@ -2,17 +2,13 @@
 The project consists of:
 - Heart Disease Prediction System is developed using the deep learning Artificial Neural Network (ANN) algorithm for predicting the risk level of heart disease. The system uses 13 medical parameters such as age, sex, blood pressure, cholesterol, and obesity for prediction. The heart disease prediction system predicts the likelihood of patients getting heart disease.
 - A Flask web application that provides an interactive interface for user input.
-- Data analysis and visualizations created with Python libraries (Pandas, Seaborn, Matplotlib) to uncover insights from the dataset.
+- Detailed exploratory data analysis (EDA) using Jupyter Notebook data_analysis.ipynb.
+- Visualizations include histograms, count plots, correlation heatmaps, box plots, and pairplots.
+- Data analysis and visualizations created with Python libraries (Pandas, Seaborn, Matplotlib).
 
 This model has a 85% accuracy score.
 
 The original data came from the Cleveland data from the UCI Machine Learning Repository. https://archive.ics.uci.edu/ml/datasets/heart+Disease
-
-Data analysis:
-In the file data_analysis.ipynb I analyzed the data from the dataset heart.csv using Pandas, Seaborn, Matplotlib 
-  - Detailed exploratory data analysis using Jupyter Notebook.
-  - Visualizations include histograms, count plots, correlation heatmaps, box plots, and pairplots.
-  - I did this to find trends and correlations to make my model more efficient.
 
 Model Deployment:  
   - A trained Keras model heart_model.keras and scaler scaler.pkl are used for predictions.
